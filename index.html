@@ -16,24 +16,35 @@
   <body>
     <main class="container">
       <section class="sidebar">
-        <header>
-          <img src="./assets/logo.png" alt="Logo VET.">
+        <main>
+          <header>
+            <img src="./assets/logo.png" alt="Logo VET.">
+            <button id="btn-menu">
+              <img src="./assets/menu.svg" alt="Botão menu">
+            </button>
+          </header>
+          <input type="search" placeholder="Busca" id="search-input">
+          <div>
+            <ul  class="menu">
+              <li><a href=""><img src="./assets/grid.svg" alt="grid icon">Dashboard</a></li>
+              <li><a href=""><img src="./assets/pet.svg" alt="grid icon">Pets</a></li>
+              <li><a href=""><img src="./assets/user.svg" alt="grid icon">Clientes</a></li>
+              <li><a href=""><img src="./assets/vet.svg" alt="grid icon">Vets</a></li>
+              <li><a href=""><img src="./assets/settings.svg" alt="grid icon">Ajustes</a></li>
+            </ul>
+          </div>
+        </main>
+
+        <footer class="user">
+          <img src="./assets/avatar.svg" alt="avatar">
+          <div class="text">
+            <p id="user-name">Eleanor Pena</p>
+            <p>Veterinária</p>
+          </div>
           <button>
-            <img src="./assets/menu.svg" alt="Botão menu">
+            <img src="./assets/log-out.svg" alt="log-out icon">
           </button>
-        </header>
-
-        <input type="search" placeholder="Busca" id="search-input">
-
-        <div>
-          <ul  class="menu">
-            <li><a href=""><img src="./assets/grid.svg" alt="grid icon">Dashboard</a></li>
-            <li><a href=""><img src="./assets/pet.svg" alt="grid icon">Pets</a></li>
-            <li><a href=""><img src="./assets/user.svg" alt="grid icon">Clientes</a></li>
-            <li><a href=""><img src="./assets/vet.svg" alt="grid icon">Vets</a></li>
-            <li><a href=""><img src="./assets/settings.svg" alt="grid icon">Ajustes</a></li>
-          </ul>
-        </div>
+        </footer>
       </section>
 
       <section class="content">
