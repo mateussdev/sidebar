@@ -52,7 +52,7 @@ button {
   cursor: pointer;
 }
 
-/* Sidebar */
+/* Sidebar ======================== */
 .sidebar {
   grid-area: sidebar;
   display: grid;
@@ -63,7 +63,6 @@ button {
 
   background: var(--green);
 
-  /* padding: 2.4rem 1.4rem auto 2.7rem; */
   padding-top: 2.4rem;
   padding-right: 1.4rem;
   padding-left: 2.7rem;
@@ -168,7 +167,20 @@ main {
   line-height: 1.8rem;
 }
 
-/* Content */
+/* Close sidebar */
+.container.toggle-sidebar {
+  grid-template-columns: 7.8rem 1fr;
+}
+
+.container.toggle-sidebar #logo, .container.close-sidebar div.search  {
+  display: none;
+}
+
+.container.toggle-sidebar #search-input {
+  display: none;
+}
+
+/* Content ======================== */
 .content {
   grid-area: content;
   background: var(--body-bg-color);
