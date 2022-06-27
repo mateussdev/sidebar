@@ -40,6 +40,18 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+
+  height: 2.4rem;
+  width: 2.4rem;
+
+  cursor: pointer;
+}
+
 /* Sidebar */
 .sidebar {
   grid-area: sidebar;
@@ -67,25 +79,35 @@ a {
   padding-bottom: 2.6rem;
 }
 
-.sidebar button {
-  border: none;
-  background: none;
+.sidebar #search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-  cursor: pointer;
-}
-
-.sidebar #search-input {
-  width: 22.2rem;
+  width: 22rem;
   height: 5rem;
 
   margin-left: -1.4rem;
   margin-bottom: 2rem;
+  padding-left: 1.3rem;
+
+
+  border-radius: 1.2rem;
+  background-color: var(--light-green);
+
+
+}
+
+.sidebar img {
+  padding-right: 1.3rem;
+}
+
+.sidebar #search-input {
+  width: 15rem;
 
   border: none;
-  border-radius: 1.2rem;
-  background: var(--light-green);
+  background: none;
 
-  padding-left: 1.3rem;
 
   font-size: 1.5rem;
   font-weight: 400;
@@ -108,6 +130,7 @@ a {
   line-height: 2.2rem;
   color: var(--text-color);
 }
+
 main {
   grid-area: main;
 }
@@ -132,9 +155,11 @@ main {
 }
 
 .sidebar .text #user-name {
-  font-size: 1.5rem;
+  font-size: 1.425rem;
   font-weight: 400;
   line-height: 2.2rem;
+
+  margin-bottom: -.10rem;
 }
 
 .sidebar .text p {
