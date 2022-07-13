@@ -172,12 +172,22 @@ main {
   grid-template-columns: 7.8rem 1fr;
 }
 
-.container.toggle-sidebar #logo, .container.close-sidebar div.search  {
+.container.toggle-sidebar .sidebar #logo, 
+.container.toggle-sidebar .sidebar #search #search-input  {
   display: none;
 }
 
 .container.toggle-sidebar #search-input {
   display: none;
+}
+
+.container.toggle-sidebar .sidebar footer.user div.text, 
+.container.toggle-sidebar .sidebar footer button {
+  display: none;
+}
+
+.container.toggle-sidebar .sidebar footer.user img {
+  margin-left: .8rem;
 }
 
 /* Content ======================== */
